@@ -1,11 +1,11 @@
 {
-  	"targets": [
+  "targets": [
     {
-    	"include_dirs": [
-	        "<!(nodejs -e \"require('nan')\")"
-	      ],
-      	"target_name": "addon",
-      	"sources": [ "hello.cc" ]
+      "include_dirs": [
+        "<!(node -e \"require('nan')\")"
+      ],
+      "target_name": "Hello",
+      "sources": [ "hello.cc" ]
     }
   ]
 }
